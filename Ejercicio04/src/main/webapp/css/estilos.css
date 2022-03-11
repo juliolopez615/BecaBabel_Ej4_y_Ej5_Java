@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+body{
+	text-align:center;
+	background-image:url('https://th.bing.com/th/id/R.73c2c83f9430514ac22f42579163e81a?rik=4Bm%2bSaz7%2bYQeyA&riu=http%3a%2f%2fimagenesparacelulares.net%2fwp-content%2fuploads%2f2014%2f09%2f416337.jpg&ehk=MxP5fi6mI7JZUUGbaZ3Yfpx0DB2oRrzWhcTFVToA5jA%3d&risl=&pid=ImgRaw&r=0')
+}
+h1{
+	text-align:center;
+	color: blue;
+}
+
+h2{
+	display:inline-block;
+	margin:5%;
+	color:green;
+}
+div{
+	background-color: white;
+}

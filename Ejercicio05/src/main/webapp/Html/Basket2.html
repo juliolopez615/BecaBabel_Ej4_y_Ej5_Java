@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlaybasketInscripciones</title>
+    <link rel="stylesheet" href="Basket.css">
+</head>
+<body>
+    <main>
+        <header>
+            <h1 id="cabecera">Play Basket</h1>
+            <a id ="pelota" href="Basket.html"><img src="img/pelota_basket.png"/></a>       
+        </header>
+        <nav class="nav2">
+            <a href="EnJuego.html"><h3>En juego</h3></a>
+            <a href="NotAvailable.html"><h3>Área técnica</h3></a>
+            <a href="NotAvailable.html"><h3>Estadísticas</h3></a>
+            <a href="NotAvailable.html"><h3>Árbitros</h3></a>
+            <a href="NotAvailable.html"><h3>Entrenadores</h3></a>
+            <a href="NotAvailable.html"><h3>Torneos</h3></a>
+        </nav>
+        
+        <div class="cont">
+            <form action="Basket.html">
+            
+                <fieldset><legend>Datos de inscripción a la competicion</legend>
+                    
+                    <label for="nombre">Nombre: </label>
+                    <input id="nombre" type="text" name="nombre" placeholder="Nombre" required/>
+                    <br />
+                    <br />
+            
+                    <label for="edad">Edad: </label>
+                    <input type="date" name="edad"/>
+                    <br/>
+                    <br/>
+                    
+                    <label for="email">email: </label>
+                    <input type="email" name="email" placeholder="Escriba su email" required/>
+            
+                    <label for="telefono">telefono: </label>
+                    <input type="tel" name="telefono" placeholder="Escriba su número"/>
+                    <br/>
+                    <br />
+            
+                    <label for="nivel">Nivel baloncesto: </label>
+                    <br />	
+                    <input type="radio" name="nivel" value="P" />principiante<br />	
+                    <input type="radio" name="nivel" value="A" />amateur<br />	
+                    <input type="radio" name="nivel" value="M" />nivel municipal<br />	
+                    <input type="radio" name="nivel" value="N" />nivel nacional o superiores<br />	
+                    <br/>
+            
+                    <label for="dias">Dias de preferencia a la hora de jugar: </label>
+                    <br />	
+                    <input type="checkbox" name="dias" value="S"/>Sábado
+                    <input type="checkbox" name="dias" value="D"/>Domingo
+                    <br/>
+                    <br>
+            
+                    <label for="problemas">Alergias o problemas médicos: </label>
+                    <br/>
+                    <textarea style="resize: none;" rows="3" cols="50" name="problemas"></textarea>
+                    <br/>
+            
+                    <br/>
+                    <label for="numPersonas">Numero personas por equipos </label>
+                    <input type="number" id="numPersonas" name="numPersonas" min="5" max="12" required>
+                    <br/>
+                    <br/>
+            
+                    <label for="terminos">Acepta los terminos de uso? </label>	
+                    <br/>
+                    <input type="checkbox" name="terminos" value="T" checked/>Acepto términos de uso<br/>
+                    
+                    <br/>
+                    <input id="numCliente" type="hidden" name="numCliente" value="valor+1"/>
+                    <br/>
+            
+                    <input type="submit" value="Enviar datos" />
+                    
+                    <input type="reset" value="Limpiar datos" />
+                </fieldset>
+            </form>
+        </div>
+        <aside>
+            <Label class="label">Publicidad:</Label>
+            <img class="as" src="img\publicidad1.jpg"/>
+            <Label class="label">Publicidad:</Label>
+            <img class="as" src="img\publicidad2.gif"/>
+            <Label class="label">Publicidad:</Label>
+            <img class="as" src="img\publicidad3.jpg"/>
+        </aside>
+        
+            
+        <footer>
+            <img class="foot" src="img/footer.png"/>
+        </footer>
+
+    </main>    
+</body>
+</html>
