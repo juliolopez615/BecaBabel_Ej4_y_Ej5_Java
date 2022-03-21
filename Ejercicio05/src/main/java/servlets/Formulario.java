@@ -1,6 +1,7 @@
 package servlets;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -20,7 +21,7 @@ public class Formulario extends HttpServlet {
 	private List<Usuario> listaUsuarios;
        
     public Formulario() {
-    	this.listaUsuarios = new LinkedList<Usuario>();
+    	this.listaUsuarios = new ArrayList<Usuario>();
     	listaUsuarios.add(new Usuario("julio", "pass123"));
     	listaUsuarios.add(new Usuario("javier", "pass"));
     	listaUsuarios.add(new Usuario("paula", "perrorojo"));
@@ -34,7 +35,7 @@ public class Formulario extends HttpServlet {
 		String password = request.getParameter("password");
 		
 		int flag = 0;
-		for(int i=0; i<3; i++) {
+		for(int i=0; i < listaUsuarios.size();i++) {
 			if(usuario.equals(listaUsuarios.get(i).getUsuario()) && password.equals(listaUsuarios.get(i).getPassword())) {
 				flag = 1;
 			}
